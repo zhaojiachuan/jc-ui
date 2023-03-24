@@ -1,13 +1,13 @@
 ---
 title: A static site based on dumi
 hero:
-  title: Site
+  title: JC-Ui/Utils
   description: A static site based on dumi
   actions:
-    - text: Hello
+    - text: 快速入门
       link: /
-    - text: World
-      link: /
+    - text: 组件文档
+      link: /components
 features:
   - title: Hello
     emoji: 💎

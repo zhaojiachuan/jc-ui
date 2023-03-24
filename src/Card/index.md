@@ -1,5 +1,5 @@
 ---
-title: Button 按钮
+title: Card 卡片
 nav:
   title: 组件
   path: /componments
