@@ -8,7 +8,7 @@ const index = ({
     editType,
     rowMargin,
     columnMargin,
-    ...rest
+    ...props
 }) => {
     // 业务按钮样式控制
     let boxStyle = {};
@@ -45,8 +45,8 @@ const index = ({
     return (
         <Button
             style={boxStyle}
-            rowMargin columnMargin {...rest}
-        />
+            rowMargin columnMargin {...props}
+        >{props.children}</Button>
     );
 };
 // 没有继承antd样式之前的基本样式
