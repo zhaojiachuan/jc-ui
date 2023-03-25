@@ -7,7 +7,7 @@ hero:
     - text: 快速入门
       link: /
     - text: 组件文档
-      link: /components
+      link: /components/home
 features:
   - title: Hello
     emoji: 💎

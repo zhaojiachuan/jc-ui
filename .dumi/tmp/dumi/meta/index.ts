@@ -5,6 +5,7 @@ import { demos as dm0, frontmatter as fm0, toc as toc0, texts as txt0 } from '/U
 import { demos as dm1, frontmatter as fm1, toc as toc1, texts as txt1 } from '/Users/zhaochuanchuan/Desktop/个人项目/jc-ui/docs/test.md?type=meta';
 import { demos as dm2, frontmatter as fm2, toc as toc2, texts as txt2 } from '/Users/zhaochuanchuan/Desktop/个人项目/jc-ui/src/Button/index.md?type=meta';
 import { demos as dm3, frontmatter as fm3, toc as toc3, texts as txt3 } from '/Users/zhaochuanchuan/Desktop/个人项目/jc-ui/src/Card/index.md?type=meta';
+import { demos as dm4, frontmatter as fm4, toc as toc4, texts as txt4 } from '/Users/zhaochuanchuan/Desktop/个人项目/jc-ui/src/Home/index.md?type=meta';
 
 export { components } from './atoms';
 export { tabs } from './tabs';
@@ -33,6 +34,12 @@ export const filesMeta = {
     toc: toc3,
     texts: txt3,
     demos: dm3,
+  },
+  'components/Home/index': {
+    frontmatter: fm4,
+    toc: toc4,
+    texts: txt4,
+    demos: dm4,
   },
 }
 

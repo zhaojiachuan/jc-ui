@@ -6,7 +6,7 @@ nav:
 group:
   title: 基础组件
   path: /basic
-  order: 1
+  order: 2
 ---
 
 # Button 输入框

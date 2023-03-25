@@ -19,7 +19,7 @@ if (process.env.NODE_ENV === 'development') {
 import React from 'react';
 
 export async function getRoutes() {
-  const routes = {"404":{"id":"404","path":"*","parentId":"DocLayout"},"dumi-context-layout":{"id":"dumi-context-layout","path":"/","isLayout":true},"DocLayout":{"id":"DocLayout","path":"/","parentId":"dumi-context-layout","isLayout":true},"docs/index":{"path":"","id":"docs/index","parentId":"DocLayout"},"docs/test":{"path":"test","id":"docs/test","parentId":"DocLayout"},"components/Button/index":{"id":"components/Button/index","path":"components/button","parentId":"DocLayout"},"components/Card/index":{"id":"components/Card/index","path":"components/card","parentId":"DocLayout"},"demo-render":{"id":"demo-render","path":"~demos/:id","parentId":"dumi-context-layout","prerender":false}} as const;
+  const routes = {"404":{"id":"404","path":"*","parentId":"DocLayout"},"dumi-context-layout":{"id":"dumi-context-layout","path":"/","isLayout":true},"DocLayout":{"id":"DocLayout","path":"/","parentId":"dumi-context-layout","isLayout":true},"docs/index":{"path":"","id":"docs/index","parentId":"DocLayout"},"docs/test":{"path":"test","id":"docs/test","parentId":"DocLayout"},"components/Button/index":{"id":"components/Button/index","path":"components/button","parentId":"DocLayout"},"components/Card/index":{"id":"components/Card/index","path":"components/card","parentId":"DocLayout"},"components/Home/index":{"id":"components/Home/index","path":"components/home","parentId":"DocLayout"},"demo-render":{"id":"demo-render","path":"~demos/:id","parentId":"dumi-context-layout","prerender":false}} as const;
   return {
     routes,
     routeComponents: {
@@ -30,6 +30,7 @@ export async function getRoutes() {
 'docs/test': React.lazy(() => import(/* webpackChunkName: "docs__test.md" */'/Users/zhaochuanchuan/Desktop/个人项目/jc-ui/docs/test.md')),
 'components/Button/index': React.lazy(() => import(/* webpackChunkName: "Button__index.md" */'/Users/zhaochuanchuan/Desktop/个人项目/jc-ui/src/Button/index.md')),
 'components/Card/index': React.lazy(() => import(/* webpackChunkName: "Card__index.md" */'/Users/zhaochuanchuan/Desktop/个人项目/jc-ui/src/Card/index.md')),
+'components/Home/index': React.lazy(() => import(/* webpackChunkName: "Home__index.md" */'/Users/zhaochuanchuan/Desktop/个人项目/jc-ui/src/Home/index.md')),
 'demo-render': React.lazy(() => import(/* webpackChunkName: "nm__dumi__dist__client__pages__Demo__index" */'/Users/zhaochuanchuan/Desktop/个人项目/jc-ui/node_modules/dumi/dist/client/pages/Demo/index.js')),
 },
   };
