@@ -9,15 +9,14 @@ group:
   order: 2
 ---
 
-# Button 输入框
+# Button 按钮
 
-基于 antd button 二次封装，兼容 antd button 所有属性
+按钮用于开始一个即时操作
 
 ## 代码演示
 
 ### 基础使用
-
-<code src='./demos/demo1.jsx'></code>
+<code src='./demos/demo1.jsx' ></code>
 
 ### 权限按钮
 
