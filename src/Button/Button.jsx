@@ -1,24 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "antd";
-const index = ({ children, onClick, bcolor, color, bgColor, full, type, className, onDoubleClick, rowMargin, columnMargin, ...rest }) => {
+const index = ({
+    borderColor,
+    color,
+    bgColor,
+    full,
+    editType,
+    rowMargin,
+    columnMargin,
+    ...rest
+}) => {
+    // 业务按钮样式控制
     let boxStyle = {};
-    if (type === "create") {
+    if (editType === "create") {
         boxStyle.boder = '1px solid #4096ff';
         boxStyle.width = "max-content";
         boxStyle.backgroundColor = `#4096ff`;
         boxStyle.color = '#ffffff';
-    } else if (type === "edit") {
+    } else if (editType === "edit") {
         boxStyle.boder = `1px solid #89d961`;
         boxStyle.width = "max-content";
         boxStyle.backgroundColor = `#89d961`;
         boxStyle.color = '#ffffff';
-    } else if (type === "delete") {
+    } else if (editType === "delete") {
         boxStyle.boder = `1px solid #ff7875`;
         boxStyle.width = "max-content";
         boxStyle.backgroundColor = `#ff7875`;
         boxStyle.color = '#ffffff';
     } else {
-        boxStyle.boder = `1px solid ${bcolor}`;
+        boxStyle.boder = `1px solid ${borderColor}`;
         boxStyle.width = full ? "100%" : "max-content"
         boxStyle.backgroundColor = `${bgColor}`;
         boxStyle.color = `${color}`;
@@ -31,20 +41,22 @@ const index = ({ children, onClick, bcolor, color, bgColor, full, type, classNam
         boxStyle.marginLeft = '5px';
         boxStyle.marginRight = '5px';
     }
+
     return (
-        <Button className={className} style={boxStyle} onClick={onClick} onDoubleClick={onDoubleClick} rowMargin {...rest}>
-            {children}
-        </Button >
+        <Button
+            style={boxStyle}
+            rowMargin columnMargin {...rest}
+        />
     );
 };
-
-index.defaultProps = {
-    bcolor: "gray",
-    disabled: false,
-    icon: true,
-    color: "#000000",
-    bgColor: "#ffffff",
-    full: false,
-};
+// 没有继承antd样式之前的基本样式
+// index.defaultProps = {
+//     borderColor: "gray",
+//     disabled: false,
+//     icon: true,
+//     color: "#000000",
+//     bgColor: "#ffffff",
+//     full: false,
+// };
 
 export default index;

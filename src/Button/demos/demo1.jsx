@@ -9,7 +9,7 @@ const Demo1 = () => {
 
     return (
         <div>
-            <Button rowMargin onClick={handleClick}>普通按钮</Button>
+            <Button onClick={handleClick}>普通按钮</Button>
         </div>
     );
 }
