@@ -46,6 +46,9 @@ group:
 <code src='./demos/demo3.jsx' >自定义样式</code>
 <br/>
 对color（字体颜色）、bgColor（背景颜色）等属性赋值，定制个性化按钮
+
+### 自带间距
+<code src='./demos/demo4.jsx' >自带间距</code>
 ### Button
 
 | 参数  |                            说明                             |                 类型                  | 默认值 | 版本  |

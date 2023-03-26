@@ -38,10 +38,9 @@ const index = ({
         boxStyle.marginRight = '5px';
     }
     if (columnMargin) {
-        boxStyle.marginLeft = '5px';
-        boxStyle.marginRight = '5px';
+        boxStyle.marginTop = '8px';
+        boxStyle.marginBottom = '8px';
     }
-
     return (
         <Button
             style={boxStyle}

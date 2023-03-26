@@ -9,7 +9,7 @@ const Demo1 = () => {
 
     return (
         <div>
-            <Button onClick={handleClick}>普通按钮</Button>
+            <Button type='primary' onClick={handleClick}>普通按钮</Button>
         </div>
     );
 }
