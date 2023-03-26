@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "antd";
+import _ from "lodash";
 const index = ({
     borderColor,
     color,
@@ -8,8 +9,19 @@ const index = ({
     editType,
     rowMargin,
     columnMargin,
+    debounce,
+    debounceTime,
     ...props
 }) => {
+    const [loading, setLoading] = useState(false)
+    const testFun = _.debounce(() => {
+        console.log(123123)
+    }, 1000, {
+        'leading': true
+    })
+    // const onClick = () => {
+    //     console.log('123')
+    // }
     // 业务按钮样式控制
     let boxStyle = {};
     if (editType === "create") {
@@ -40,6 +52,11 @@ const index = ({
     if (columnMargin) {
         boxStyle.marginTop = '8px';
         boxStyle.marginBottom = '8px';
+    }
+    if (debounce) {
+        props.onClick = _.debounce(props.onClick, debounceTime ? debounceTime : 1000, {
+            'leading': true
+        })
     }
     return (
         <Button

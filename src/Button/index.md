@@ -38,17 +38,22 @@ group:
 
 ### 业务按钮
 
-<code src='./demos/demo2.jsx' >业务按钮</code>
+<code src='./demos/demo2.jsx' ></code>
 <br/>
 通过指定不同的editType，区分不同业务下按钮的不同样式
 
 ### 自定义样式
-<code src='./demos/demo3.jsx' >自定义样式</code>
+<code src='./demos/demo3.jsx' ></code>
 <br/>
 对color（字体颜色）、bgColor（背景颜色）等属性赋值，定制个性化按钮
 
 ### 自带间距
-<code src='./demos/demo4.jsx' >自带间距</code>
+<code src='./demos/demo4.jsx' ></code>
+<br/>
+设置rowMargin或columnMargin的值为true，让按钮横向或纵向自带间距
+
+### 防抖按钮
+<code src='./demos/demo5.jsx' ></code>
 ### Button
 
 | 参数  |                            说明                             |                 类型                  | 默认值 | 版本  |
