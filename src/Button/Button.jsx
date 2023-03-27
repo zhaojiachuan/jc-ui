@@ -19,9 +19,6 @@ const index = ({
     }, 1000, {
         'leading': true
     })
-    // const onClick = () => {
-    //     console.log('123')
-    // }
     // 业务按钮样式控制
     let boxStyle = {};
     if (editType === "create") {
