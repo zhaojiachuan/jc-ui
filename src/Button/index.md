@@ -54,11 +54,21 @@ group:
 
 ### 防抖按钮
 <code src='./demos/demo5.jsx' ></code>
-### Button
+<br/>
+具有防抖功能的按钮，设置debounce属性决定是否启用防抖功能，debounceTime参数设置等待时间，默认1s
+<br/>
+<br/>
+<br/>
+### 主要参数
 
-| 参数  |                            说明                             |                 类型                  | 默认值 | 版本  |
-| :---: | :---------------------------------------------------------: | :-----------------------------------: | :----: | :---: |
-| async |           异步操作 onClick 执行时自动添加 loading           |                boolean                | false  |   -   |
-| Role  | 角色权限 具体看 [Roles 组件](/hera-ui/business/roles#roles) | string \| (string \| (()=>boolean))[] |   -    | 2.2.3 |
+| 参数  |                            说明                              |                 类型                  |    默认值   |  版本  |
+| :---: | :---------------------------------------------------------: | :-----------------------------------:|   :----:   | :---: |
+| editType |              设置editType，切换按钮的三种样式                 |               string                |     -      | 1.0.0 |
+| color    |                     字体颜色                               |               string                |   #000000  | 1.0.0 |
+| bgColor  |                     背景颜色                               |               string                |   #FFFFFF  | 1.0.0 |
+| rowMargin |                    横向间距                               |               boolean               |   false    | 1.0.0 |
+| debounce |                     是否开启防抖                            |               boolean               |   false    | 1.0.0 |
+| debounceTime |                 函数调用间隔时间                         |               number               |   1000ms    | 1.0.0 |
+
 
 兼容其他 antd Button 属性

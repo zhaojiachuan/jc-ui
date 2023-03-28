@@ -5,7 +5,6 @@ const index = ({
     borderColor,
     color,
     bgColor,
-    full,
     editType,
     rowMargin,
     columnMargin,
@@ -14,15 +13,16 @@ const index = ({
     ...props
 }) => {
     const [loading, setLoading] = useState(false)
-    const testFun = _.debounce(() => {
-        console.log(123123)
-    }, 1000, {
+    const loadFun = props.onClick
+    const newFun = _.debounce(() => {
+        setLoading(true)
+        loadFun()
+        setTimeout(() => {
+            setLoading(false)
+        }, debounceTime)
+    }, debounceTime, {
         'leading': true
     })
-    // const onClick = () => {
-    //     console.log('123')
-    // }
-    // 业务按钮样式控制
     let boxStyle = {};
     if (editType === "create") {
         boxStyle.boder = '1px solid #4096ff';
@@ -41,7 +41,7 @@ const index = ({
         boxStyle.color = '#ffffff';
     } else {
         boxStyle.boder = `1px solid ${borderColor}`;
-        boxStyle.width = full ? "100%" : "max-content"
+        boxStyle.width = "max-content"
         boxStyle.backgroundColor = `${bgColor}`;
         boxStyle.color = `${color}`;
     }
@@ -54,9 +54,8 @@ const index = ({
         boxStyle.marginBottom = '8px';
     }
     if (debounce) {
-        props.onClick = _.debounce(props.onClick, debounceTime ? debounceTime : 1000, {
-            'leading': true
-        })
+        props.loading = loading
+        props.onClick = newFun
     }
     return (
         <Button

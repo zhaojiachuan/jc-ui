@@ -9,7 +9,7 @@ const Demo4 = () => {
                 <Button rowMargin>自带横向间隔</Button>
             </div>
             <div>
-                <Button columnMargin rowMargin asyncButton>自带纵向间隔</Button>
+                <Button columnMargin rowMargin >自带纵向间隔</Button>
                 <Button columnMargin rowMargin>自带纵向间隔</Button>
             </div>
         </>

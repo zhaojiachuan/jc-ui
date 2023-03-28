@@ -10,8 +10,9 @@ const Demo5 = () => {
     return (
         <div>
             <Button
+                type='primary'
                 debounce
-                debounceTime={3000}
+                debounceTime={1000}
                 onClick={testClick}
             >防抖按钮</Button>
         </div>
