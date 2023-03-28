@@ -4,9 +4,9 @@ nav:
   title: 组件
   path: /componments
 group:
-  title: 基础组件
+  title: 数据展示
   path: /basic
-  order: 1
+  order: 3
 ---
 
 # Button 输入框

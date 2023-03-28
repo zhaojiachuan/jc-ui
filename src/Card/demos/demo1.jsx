@@ -1,9 +1,10 @@
 import React from 'react';
+import { Card } from 'jc-ui'
 
 const Demo1 = () => {
     return (
         <div>
-            123
+            <Card />
         </div>
     );
 }
