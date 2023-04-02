@@ -1,7 +1,7 @@
 {
   "name": "jc-ui",
   "version": "0.0.1",
-  "description": "A static site based on dumi",
+  "description": "jc-ui",
   "scripts": {
     "start": "npm run dev",
     "dev": "dumi dev",

@@ -1,21 +1,46 @@
 import React from 'react'
 import { Divider } from 'antd'
-import './Card.css'
 
-const index = ({ children, title, borderColor, width, borderRadius, height, style, margin }) => {
+
+const index = ({ extra, children, title, borderColor, width, borderRadius, height, margin }) => {
     let boxStyle;
+    let titleStyle;
+    let contentStyle;
+    let titleText;
+    let extraStyle;
     boxStyle = {
-        border: `1px solid ${borderColor}`,
+        border: `2px solid ${borderColor}`,
         width: `${width}`,
         height: `${height}`,
         borderRadius: `${borderRadius}`,
         margin: `${margin}`
     };
+    titleStyle = {
+        height: '3vh',
+        lineHeight: '6vh',
+        paddingLeft: '1vw',
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        paddingRight: '1vw'
+    };
+    contentStyle = {
+        paddingLeft: '1vw'
+    };
+    titleText = {
+        fontSize: 'larger',
+    };
+    extraStyle = {
+
+    }
     return (
         <div style={boxStyle}>
-            <div className='ZCard_title'>{title}</div>
+            <div style={titleStyle}>
+                <div style={titleText}>{title}</div>
+                <div style={extraStyle}>{extra}</div>
+            </div>
             <Divider />
-            <div className='ZCard_content'>{children}</div>
+            <div style={contentStyle}>{children}</div>
         </div>
     )
 }
@@ -23,8 +48,8 @@ const index = ({ children, title, borderColor, width, borderRadius, height, styl
 index.defaultProps = {
     borderColor: "#f0f0f0",
     width: '23vw',
-    height: '20vh',
-    borderRadius: '15px'
+    height: '26vh',
+    borderRadius: '0px'
 }
 
 export default index

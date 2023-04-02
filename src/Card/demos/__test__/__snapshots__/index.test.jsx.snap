@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component Card renders correctly 1`] = `
+<div>
+  <div
+    style="border: 2px solid #f0f0f0; width: 23vw; height: 26vh; border-radius: 0px;"
+  >
+    <div
+      style="height: 3vh; line-height: 6vh; padding-left: 1vw; display: flex; flex-direction: row; justify-content: space-between; padding-right: 1vw;"
+    >
+      <div
+        style="font-size: larger;"
+      />
+      <div />
+    </div>
+    <div
+      class="ant-divider css-dev-only-do-not-override-mxhywb ant-divider-horizontal"
+      role="separator"
+    />
+    <div
+      style="padding-left: 1vw;"
+    >
+      card
+    </div>
+  </div>
+</div>
+`;

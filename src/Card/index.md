@@ -9,16 +9,18 @@ group:
   order: 3
 ---
 
-# Button 输入框
+# Card 卡片
+通用卡片容器。
+<br/>
 
-基于 antd button 二次封装，兼容 antd button 所有属性
+## 何时使用
+最基础的卡片容器，可承载文字、列表、图片、段落，常用于后台概览页面。
 
 ## 代码演示
 
 ### 基础使用
 
 <code src='./demos/demo1.jsx'></code>
-
 ### 权限按钮
 
 <code src='./demos/demo2.tsx' />

@@ -1,5 +1,5 @@
 ---
-title: A static site based on dumi
+title: jc-ui
 hero:
   title: JC-Ui
   description: 基于antd二次封装的业务组件
