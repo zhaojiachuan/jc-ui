@@ -21,10 +21,13 @@ group:
 ### 基础使用
 
 <code src='./demos/demo1.jsx'></code>
-### 权限按钮
+<br/>
+设置extra来确定是否自定义右侧内容，支持一切格式
 
-<code src='./demos/demo2.tsx' />
-
+### 自定义卡片样式 
+<code src='./demos/demo2.jsx'></code>
+<br/>
+用户可以通过style属性自行设定样式，也可以通过borderColor、borderRadius等属性快速设定
 ### Button
 
 | 参数  |                            说明                             |                 类型                  | 默认值 | 版本  |

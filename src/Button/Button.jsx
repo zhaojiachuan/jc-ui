@@ -6,10 +6,11 @@ const index = ({
     color,
     bgColor,
     editType,
-    rowMargin,
-    columnMargin,
+    rowType,
+    columnType,
     debounce,
     debounceTime,
+    style,
     ...props
 }) => {
     const [loading, setLoading] = useState(false)
@@ -45,11 +46,11 @@ const index = ({
         boxStyle.backgroundColor = `${bgColor}`;
         boxStyle.color = `${color}`;
     }
-    if (rowMargin) {
+    if (rowType) {
         boxStyle.marginLeft = '5px';
         boxStyle.marginRight = '5px';
     }
-    if (columnMargin) {
+    if (columnType) {
         boxStyle.marginTop = '8px';
         boxStyle.marginBottom = '8px';
     }
@@ -60,7 +61,7 @@ const index = ({
     return (
         <Button
             style={boxStyle}
-            rowMargin columnMargin {...props}
+            rowType columnType {...props}
         >{props.children}</Button>
     );
 };

@@ -5,12 +5,12 @@ const Demo4 = () => {
     return (
         <>
             <div>
-                <Button rowMargin>自带横向间隔</Button>
-                <Button rowMargin>自带横向间隔</Button>
+                <Button rowType>自带横向间隔</Button>
+                <Button rowType>自带横向间隔</Button>
             </div>
             <div>
-                <Button columnMargin rowMargin >自带纵向间隔</Button>
-                <Button columnMargin rowMargin>自带纵向间隔</Button>
+                <Button columnType rowType >自带纵向间隔</Button>
+                <Button columnType rowType>自带纵向间隔</Button>
             </div>
         </>
     );

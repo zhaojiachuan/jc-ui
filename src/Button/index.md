@@ -50,7 +50,7 @@ group:
 ### 自带间距
 <code src='./demos/demo4.jsx' ></code>
 <br/>
-设置rowMargin或columnMargin的值为true，让按钮横向或纵向自带间距
+设置row或column的值为true，让按钮横向或纵向自带间距
 
 ### 防抖按钮
 <code src='./demos/demo5.jsx' ></code>
@@ -66,8 +66,9 @@ group:
 | editType |              设置editType，切换按钮的三种样式                 |               string                |     -      | 1.0.0 |
 | color    |                     字体颜色                               |               string                |   #000000  | 1.0.0 |
 | bgColor  |                     背景颜色                               |               string                |   #FFFFFF  | 1.0.0 |
-| rowMargin |                    横向间距                               |               boolean               |   false    | 1.0.0 |
-| debounce |                     是否开启防抖                            |               boolean               |   false    | 1.0.0 |
+| rowType |                    横向间距                               |               boolean               |   false    | 1.0.0 |
+| debounce |                     是否开启防抖                            |               boolean               |   false    | 1.0.0 
+| columnType |                    纵向间距                               |               boolean               |   false    | 1.0.0 ||
 | debounceTime |                 函数调用间隔时间                         |               number               |   1000ms    | 1.0.0 |
 
 

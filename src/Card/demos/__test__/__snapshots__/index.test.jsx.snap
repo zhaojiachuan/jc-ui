@@ -6,7 +6,7 @@ exports[`component Card renders correctly 1`] = `
     style="border: 2px solid #f0f0f0; width: 23vw; height: 26vh; border-radius: 0px;"
   >
     <div
-      style="height: 3vh; line-height: 6vh; padding-left: 1vw; display: flex; flex-direction: row; justify-content: space-between; padding-right: 1vw;"
+      style="height: 3vh; line-height: 6vh; padding-left: 1vw; display: flex; flex-direction: rowType; justify-content: space-between; padding-right: 1vw;"
     >
       <div
         style="font-size: larger;"

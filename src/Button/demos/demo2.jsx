@@ -17,9 +17,9 @@ const Demo2 = () => {
 
     return (
         <div>
-            <Button editType='create' onClick={handleAdd} rowMargin >创建数据</Button>
-            <Button editType='edit' onClick={handleEdit} rowMargin >编辑数据</Button>
-            <Button editType='delete' onClick={handleDelete} rowMargin >删除数据</Button>
+            <Button editType='create' onClick={handleAdd} rowType >创建数据</Button>
+            <Button editType='edit' onClick={handleEdit} rowType >编辑数据</Button>
+            <Button editType='delete' onClick={handleDelete} rowType >删除数据</Button>
         </div>
     );
 }

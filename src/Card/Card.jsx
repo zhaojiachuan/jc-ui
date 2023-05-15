@@ -2,13 +2,20 @@ import React from 'react'
 import { Divider } from 'antd'
 
 
-const index = ({ extra, children, title, borderColor, width, borderRadius, height, margin }) => {
+const index = ({ onClick, extra, children, title, borderColor, width, borderRadius, height, margin, style }) => {
     let boxStyle;
     let titleStyle;
     let contentStyle;
     let titleText;
     let extraStyle;
-    boxStyle = {
+    boxStyle = style ? {
+        border: `2px solid ${borderColor}`,
+        width: `${width}`,
+        height: `${height}`,
+        borderRadius: `${borderRadius}`,
+        margin: `${margin}`,
+        ...style
+    } : {
         border: `2px solid ${borderColor}`,
         width: `${width}`,
         height: `${height}`,
@@ -20,7 +27,7 @@ const index = ({ extra, children, title, borderColor, width, borderRadius, heigh
         lineHeight: '6vh',
         paddingLeft: '1vw',
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: 'rowType',
         justifyContent: 'space-between',
         paddingRight: '1vw'
     };
@@ -33,6 +40,7 @@ const index = ({ extra, children, title, borderColor, width, borderRadius, heigh
     extraStyle = {
 
     }
+
     return (
         <div style={boxStyle}>
             <div style={titleStyle}>
